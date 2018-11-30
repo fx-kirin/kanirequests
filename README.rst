@@ -1,8 +1,8 @@
 pyhttp
 ======
 
-.. image:: https://img.shields.io/pypi/v/pyhttp.svg
-    :target: https://pypi.python.org/pypi/pyhttp
+.. image:: https://img.shields.io/pypi/v/kani_requests.svg
+    :target: https://pypi.python.org/pypi/kani_requests
     :alt: Latest PyPI version
 
 .. image:: ''.png
@@ -29,4 +29,4 @@ Licence
 Authors
 -------
 
-`pyhttp` was written by `fx-kirin <ono.kirin@gmail.com>`_.
+`kani_requests` was written by `fx-kirin <ono.kirin@gmail.com>`_.

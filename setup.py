@@ -1,7 +1,7 @@
 import setuptools
 
 setuptools.setup(
-    name="pyhttp",
+    name="kani_requests",
     version="0.1.0",
     url="''",
 
