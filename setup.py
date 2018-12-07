@@ -1,9 +1,9 @@
 import setuptools
 
 setuptools.setup(
-    name="kani_requests",
+    name="kanirequests",
     version="0.1.0",
-    url="''",
+    url="",
 
     author="fx-kirin",
     author_email="ono.kirin@gmail.com",
