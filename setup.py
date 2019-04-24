@@ -2,8 +2,8 @@ import setuptools
 
 setuptools.setup(
     name="kanirequests",
-    version="0.1.0",
-    url="",
+    version="0.1.1",
+    url="https://github.com/fx-kirin/kanirequests",
 
     author="fx-kirin",
     author_email="ono.kirin@gmail.com",
