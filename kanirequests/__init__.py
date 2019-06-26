@@ -16,7 +16,7 @@ from requests.adapters import TimeoutSauce
 
 
 class KaniRequests(object):
-    def __init__(self, headers={}, proxy={}, default_timeout=None):
+    def __init__(self, headers={}, proxy={}, default_timeout=None, max_retries=3):
         def __init__(self, *args, **kwargs):
             if kwargs['connect'] is None:
                 kwargs['connect'] = default_timeout
@@ -34,7 +34,7 @@ class KaniRequests(object):
             self.session.proxies = proxy
             #self.session.verify = os.path.join(os.path.dirname(__file__), "FiddlerRoot.pem")
             self.session.verify = None
-        self.adapters = requests.adapters.HTTPAdapter(max_retries=3)
+        self.adapters = requests.adapters.HTTPAdapter(max_retries=max_retries)
         self.adapters.TimeoutSauce = DefaultTimeout
         requests.adapters.TimeoutSauce = DefaultTimeout
         self.session.mount("http://", self.adapters)
