@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name="kanirequests",
-    version="0.1.2",
+    version="0.1.3",
     url="https://github.com/fx-kirin/kanirequests",
 
     author="fx-kirin",
@@ -13,7 +13,7 @@ setuptools.setup(
 
     packages=setuptools.find_packages(),
 
-    install_requires=[],
+    install_requires=["requests", "requests_html"],
 
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
@@ -23,5 +23,8 @@ setuptools.setup(
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
     ],
 )
