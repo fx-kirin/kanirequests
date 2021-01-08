@@ -12,7 +12,7 @@ from requests.adapters import TimeoutSauce
 from requests.utils import add_dict_to_cookiejar, dict_from_cookiejar
 from requests_html import HTMLSession
 
-__version__ = "0.1.4"
+__version__ = "0.1.5"
 __author__ = "fx-kirin <ono.kirin@gmail.com>"
 __all__ = ["KaniRequests", "open_html_in_browser"]
 
@@ -79,7 +79,7 @@ class KaniRequests(object):
             if self.yag is not None:
                 body = f"Error on Get {url=} {args=} {kwargs=}"
                 body += "\n[sys.exe_info]\n"
-                body += sys.exc_info()
+                body += str(sys.exc_info())
                 body = "\n[traceback.format_exc]\n"
                 body += traceback.format_exc()
                 self.yag.send(
