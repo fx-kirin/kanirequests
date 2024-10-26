@@ -145,7 +145,7 @@ def open_html_in_browser(html_text):
         f.write(html_text)
         f.flush()
         os.system("xdg-open %s > /dev/null 2>&1" % (filename))
-        time.sleep(1)
+        time.sleep(5)
 
 
 if __name__ == "__main__":

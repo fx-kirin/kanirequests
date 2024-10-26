@@ -6,7 +6,7 @@ setuptools.setup(
     url="https://github.com/fx-kirin/kanirequests",
 
     author="fx-kirin",
-    author_email="ono.kirin@gmail.com",
+    author_email="fx.kirin@gmail.com",
 
     description="''",
     long_description=open('README.rst').read(),
